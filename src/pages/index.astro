@@ -1,0 +1,382 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BarraSuperior from "../components/BarraSuperior.astro";
+import Encabezado from "../components/Encabezado.astro";
+import Menu from "../components/Menu.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Portafolio de Evidencias | IT Delicias">
+	<BarraSuperior />
+	<Encabezado />
+	<Menu />
+
+	<main class="contenedor" id="inicio">
+		<!-- Portada -->
+		<section class="portada">
+			<article class="destacada">
+				<video
+					controls
+					autoplay
+					muted
+					loop
+					poster="/images/patrickIMG.jpg"
+				>
+					<source src="/videos/patrickstar.mp4" type="video/mp4" />
+					Tu navegador no soporta video HTML5.
+				</video>
+				<span class="etiqueta">Proyecto Destacado</span>
+				<h2>
+					<a href="#proyectos"
+						>Sitio Web Corporativo e Integración Web</a
+					>
+				</h2>
+				<p>
+					Desarrollo e implementación de soluciones web con interfaz
+					moderna y amigable, aplicando metodologías ágiles y
+					arquitecturas escalables.
+				</p>
+				<p class="meta">Por Estudiante ITD — 7° Semestre</p>
+			</article>
+
+			<aside class="lateral">
+				<h3 class="lateral__titulo">Tecnologías Favoritas</h3>
+				<ol class="mas-leido">
+					<li><a href="#">HTML5 & CSS3 Avanzado</a></li>
+					<li><a href="#">JavaScript / Node.js</a></li>
+					<li><a href="#">SQL & PostgreSQL</a></li>
+					<li><a href="#">Python & C#</a></li>
+					<li><a href="#">Java & Programación OO</a></li>
+				</ol>
+			</aside>
+		</section>
+
+		<!-- Habilidades Técnicas -->
+		<section class="seccion" id="habilidades">
+			<h2 class="seccion__titulo">Habilidades Técnicas</h2>
+			<div class="tarjetas">
+				<article class="tarjeta">
+					<h3><a href="#">Desarrollo Web Frontend</a></h3>
+					<p>
+						Diseño de interfaces adaptables y semánticas mediante
+						HTML5, CSS3 y componentes accesibles.
+					</p>
+				</article>
+				<article class="tarjeta">
+					<h3><a href="#">Bases de Datos</a></h3>
+					<p>
+						Diseño, consulta y administración de bases de datos
+						relacionales con SQL Server y PostgreSQL.
+					</p>
+				</article>
+				<article class="tarjeta">
+					<h3><a href="#">Programación y Lógica</a></h3>
+					<p>
+						Desarrollo de lógica de negocio estructurada e orientada
+						a objetos en Java, C# y Python.
+					</p>
+				</article>
+			</div>
+			<br />
+			<div>
+				<a
+					href="/docs/Portafolio de clase.pdf"
+					download
+					class="etiqueta"
+				>
+					Descargar Portafolio en PDF
+				</a>
+			</div>
+		</section>
+
+		<!-- Proyectos -->
+		<section class="seccion" id="proyectos">
+			<h2 class="seccion__titulo">Proyectos Realizados</h2>
+			<div class="tarjetas">
+				<article class="tarjeta">
+					<img src="/images/imagen.jpg" alt="Sitio Web Corporativo" />
+					<h3><a href="#">Sitio Web Corporativo</a></h3>
+					<p>
+						Plataforma para gestión empresarial e interacción en
+						línea con clientes.
+					</p>
+				</article>
+				<article class="tarjeta">
+					<img src="/images/mando.jpg" alt="Sistema de Inventario" />
+					<h3><a href="#">Sistema de Control de Inventario</a></h3>
+					<p>
+						Aplicación para administración y control de stock en
+						tiempo real.
+					</p>
+				</article>
+				<article class="tarjeta">
+					<img
+						src="/images/seguridad.jpg"
+						alt="Análisis de Ciberseguridad"
+					/>
+					<h3><a href="#">Análisis de Ciberseguridad</a></h3>
+					<p>
+						Evaluación de vulnerabilidades e implementación de
+						políticas de seguridad digital.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<!-- Logros -->
+		<section class="seccion" id="aventuras">
+			<h2 class="seccion__titulo">Mis Logros y Aventuras</h2>
+
+			<div class="grid-rangos">
+				<div class="tarjeta-rango">
+					<span class="rango-tag">Gaming</span>
+					<h3>Rocket League</h3>
+					<p>Champion Dominando las rotaciones y los aéreos.</p>
+					<img
+						src="/images/rocket.jpg"
+						alt="Logo de Rocket League"
+						width="150"
+						height="150"
+					/>
+				</div>
+
+				<div class="tarjeta-rango">
+					<span class="rango-tag">Gaming GG</span>
+					<h3>Apex Legends</h3>
+					<p>
+						Aunque no parezca, me la rifo bien rico en apex, le se
+						al tap strafe.
+					</p>
+					<img
+						src="/images/apex.jpg"
+						alt="Logo de Apex Legends"
+						width="150"
+						height="150"
+					/>
+				</div>
+
+				<div class="tarjeta-rango">
+					<span class="rango-tag">Música</span>
+					<h3>Twenty One Pilots</h3>
+					<p>
+						Super ultra hiper mega papu fan supremo de los twenty
+						one pilots desde por ahi de 2015.
+					</p>
+					<img
+						src="/images/twentyone.jpg"
+						alt="Twenty One Pilots"
+						width="150"
+						height="150"
+					/>
+				</div>
+
+				<div class="tarjeta-rango">
+					<span class="rango-tag">IT</span>
+					<h3>Diseño Web</h3>
+					<p>
+						Creando interfaces oscuras y con estética neón que se
+						ven bien rifadas.
+					</p>
+					<img
+						src="/images/claudio.jpg"
+						alt="Mascota de claude"
+						width="150"
+						height="150"
+					/>
+				</div>
+			</div>
+
+			<!-- Foto mia -->
+			<div class="foto-personal-contenedor">
+				<p class="meta text-center">
+					Nos rifamos todo con Chato, Gerardo y Claudio
+				</p>
+				<p></p>
+				<img src="/images/anderGG.jpg" alt="Mi papufoto" width="300" />
+				<p></p>
+				<p class="meta text-center">
+					Jugar beis y Apex es lo unico que hago bien sin la IA
+				</p>
+			</div>
+		</section>
+
+		<!-- Preguntas Frecuentes -->
+		<section class="seccion" id="faq">
+			<h2 class="seccion__titulo">Preguntas Frecuentes</h2>
+			<details>
+				<summary
+					><strong>¿Qué semestre curso actualmente?</strong></summary
+				>
+				<p>
+					Actualmente me encuentro cursando el 7° semestre en la
+					carrera de Ingeniería en Sistemas Computacionales.
+				</p>
+			</details>
+			<br />
+			<details>
+				<summary
+					><strong
+						>¿En cuál área te gustaría desarrollarte
+						profesionalmente?</strong
+					></summary
+				>
+				<p>
+					Especialmente en el área de Ciberseguridad y Desarrollo Web
+					Fullstack.
+				</p>
+			</details>
+			<br />
+			<details>
+				<summary
+					><strong>¿Realizas proyectos por encargo?</strong></summary
+				>
+				<p>
+					Sí, estoy disponible para colaboración y desarrollo de
+					software por proyecto.
+				</p>
+			</details>
+			<br />
+			<details>
+				<summary><strong>¿Formas de pago aceptadas?</strong></summary>
+				<p>Transferencia electrónica interbancaria.</p>
+				<dialog id="dialog">
+					<h3>Cuenta Interbancaria</h3>
+					<p>6461800000000000000</p>
+					<button id="ocultar">Cerrar</button>
+				</dialog>
+				<br />
+				<button id="vermas">Ver número de cuenta</button>
+			</details>
+		</section>
+
+		<!-- Formulario -->
+		<section class="seccion" id="contacto">
+			<h2 class="seccion__titulo">Formulario de Contacto</h2>
+			<form method="post" action="/">
+				<fieldset>
+					<legend>Información Personal</legend>
+					<div>
+						<label for="name">Nombre Completo:</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Escribe tu nombre"
+							required
+						/>
+					</div>
+					<div>
+						<label for="email">Correo Electrónico:</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="correo@ejemplo.com"
+							required
+						/>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Información de Contacto</legend>
+					<div>
+						<label for="tel">Teléfono:</label>
+						<input
+							type="tel"
+							id="tel"
+							name="telefono"
+							pattern="[0-9]{10}"
+							inputmode="numeric"
+							placeholder="10 dígitos"
+							required
+						/>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Detalles</legend>
+					<div>
+						<label for="why">Motivo de contacto:</label>
+						<select name="why" id="why">
+							<option value="1">Propuesta de Trabajo</option>
+							<option value="2">Dudas o Consultas</option>
+							<option value="3">Colaboración en Proyecto</option>
+							<option value="4">Más Información</option>
+						</select>
+					</div>
+					<div>
+						<datalist id="lenguajes">
+							<option value="HTML5">
+								<option value="CSS3">
+									<option value="JavaScript">
+										<option value="Python">
+											<option value="C#"> </option>
+											<label for="lenguaje-input"
+												>¿Con qué tecnología necesitas
+												ayuda?</label
+											>
+											<input
+												list="lenguajes"
+												id="lenguaje-input"
+												name="lenguajes"
+											/>
+										</option>
+										<div>
+											<label for="term"
+												>¿Aceptas los términos y
+												condiciones?</label
+											>
+											<input
+												type="checkbox"
+												id="term"
+												name="term"
+												required
+											/>
+										</div>
+									</option>
+
+									<input
+										type="submit"
+										value="Enviar Contacto"
+									/>
+								</option>
+							</option>
+
+							<!-- Ubicación -->
+							<section class="seccion">
+								<h2 class="seccion__titulo">Ubicación</h2>
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.187905168775!2d-105.2031556845889!3d28.19409198242288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86b8c5e7a6e7c5b9%3A0x8c5e7a6e7c5b9a6e!2sInstituto%20Tecnol%C3%B3gico%20de%20Delicias!5e0!3m2!1ses-419!2smx!4v1697041234567"
+									width="100%"
+									height="350"
+									style="border:0;"
+									allowfullscreen=""
+									loading="lazy"></iframe>
+							</section>
+						</datalist>
+
+						<Footer />
+
+						<script>
+							const btnVer = document.getElementById("vermas");
+							const dlg = document.getElementById(
+								"dialog",
+							) as HTMLDialogElement | null;
+							const btnOcultar =
+								document.getElementById("ocultar");
+
+							if (btnVer && dlg && btnOcultar) {
+								btnVer.addEventListener("click", () =>
+									dlg.showModal(),
+								);
+								btnOcultar.addEventListener("click", () =>
+									dlg.close(),
+								);
+							}
+						</script>
+					</div>
+				</fieldset>
+			</form>
+		</section>
+	</main></Layout
+>

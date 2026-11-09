@@ -1,0 +1,28 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import '../styles/estilos.css';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+		<link rel="icon" href="/images/ico.png" type="image/png">
+		<meta name="robots" content="index,follow">
+		<meta name="theme-color" content="#111111">
+		<meta property="og:title" content="Portafolio de Evidencias - IT Delicias">
+		<meta property="og:description" content="Portafolio de evidencias de Ingeniería en Sistemas Computacionales">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
